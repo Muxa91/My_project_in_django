@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../static/pages/css/style.css">
+  <script src="../../static/pages/js/Js.js"></script>
+    <title>Интернет магазин</title>
+
+
+</head>
+<body>
+<header class="p-3 bg-dark text-white">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 text-white">Оплата</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">Доставка</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">Контакты</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">Информация</a></li>
+      </ul>
+      <span style="float:right; margin-right:5px;">Телефон 8(800)800-80-80</span>
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+        <input type="Поиск по сайту" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+      </form>
+
+      <div class="text-end">
+        <button type="button" class="btn btn-outline-light me-2" onClick='location.href="sing-up/"'>личный кабинет</button>
+        <button type="button" class="btn btn-warning" onClick='location.href="registration/"'>Зарегистрироваться</button>
+
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner" style="height:400px;">
+      <div class="carousel-item active">
+        <a href="product_pc/" class="href_banner">
+        <img  class="img_banner" src="../../static/pages/img/banners/banner1.jpg" class="d-block w-100" alt="...">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="" class="href_banner">
+          <img  class="img_banner" src="../../static/pages/img/banners/banner2.jpg" class="d-block w-100" alt="...">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="" class="href_banner">
+          <img  class="img_banner" src="../../static/pages/img/banners/banner3.jpg" class="d-block w-100" alt="...">
+        </a>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Назад</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Вперед</span>
+    </button>
+  </div>
+
+</main>
+<div class="container marketing">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row" style="margin-top:30px;">
+    <div class="col-lg-4">
+      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <img src="../../static/pages/img/marketing/pc/pc1.png" height="140" width="140" align="left"/>
+      </svg>
+      <h2>Сборка ПК</h2>
+      <p>Описание ПК</p>
+      <p><a class="btn btn-secondary" href="product_pc/">Детали »</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <img src="../../static/pages/img/marketing/notebook/notebook1.jpg" height="140" width="140" align="left"/>
+      </svg>
+      <h2>Ноутбук</h2>
+      <p>Описание Ноутбука</p>
+      <p><a class="btn btn-secondary" href="#">Детали »</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <img src="../../static/pages/img/marketing/Phone/Phone1.jpg" height="140" width="140" align="left"/>
+      </svg>
+      <h2>Телефон</h2>
+      <p>Описание Телефона</p>
+      <p><a class="btn btn-secondary" href="#">Детали »</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <img src="../../static/pages/img/marketing/pc/pc1.png" height="140" width="140" align="left"/>
+      </svg>
+      <h2>Сборка ПК</h2>
+      <p>Описание ПК</p>
+      <p><a class="btn btn-secondary" href="#">Детали »</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <img src="../../static/pages/img/marketing/Phone/Phone1.jpg" height="140" width="140" align="left"/>
+      </svg>
+      <h2>Телефон</h2>
+      <p>Описание Телефона</p>
+      <p><a class="btn btn-secondary" href="#">Детали »</a></p>
+    </div><!-- /.col-lg-4 -->
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>© 2021–2021 Company, Inc.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.img_banner{
+    height:400px;
+    width:100%;
+}
+.carousel-control-prev{
+    opacity:0;
+}
+.carousel-control-next{
+    opacity:0;
+}
+
+
+#product {
+    padding-left: 20%;
+}
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+}
+
+#container_registration{
+    width: 300px;
+    margin: auto;
+    margin-top: 15%;
+
+}
